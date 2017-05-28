@@ -1,0 +1,140 @@
+html,body,.sidebar,.pure-g
+{
+	height: 100%;
+}
+
+.sidebar
+{
+	width: 150px;
+	background-color: black;
+	height: 100%;
+	border: 0px;
+	position: fixed;
+	transition: left 0.5s;
+    
+}
+
+.sidebar-heading
+{
+	#background-color: #79dbd7;
+	#color: #FFF;
+	background-color: #1f8dd6;
+}
+
+
+.pure-menu-item > a:hover
+{
+	background-color: #333;
+}
+
+#main-content
+{
+	background-color: #FEF;
+	background-image: url("Images/background.svg");
+	margin-left: 150px;
+	height: 100%;
+	
+}
+
+#title
+{
+	background-image: url("Images/heading-background.jpeg");
+	color: #666;
+	height: 25%;
+}
+
+#title h1
+{
+	margin: 0px;
+	padding-top: 50px;
+	padding-left: 20px;
+}
+
+#title h3
+{
+	margin: 0px;
+	margin-top: 0px;
+	padding-left: 20px;
+}
+
+#pageContent
+{
+	height: 100%;
+}
+
+#profile-photo
+{
+	margin-top: 10%;
+	height: 75%;
+	width: auto;
+	border-radius: 100%;
+}
+
+.information-box
+{
+	border: 1px solid #999;
+	margin: 3% 1% 0% 1%;
+	border-radius: 10px;
+	padding: 2% 1% 2% 1%
+}
+
+.hamburger-icon
+{
+	background-color: black;
+	transition: left 0.5s;
+	position: fixed;
+	width: 40px;
+	height: 40px;
+	left: -150px;
+
+
+}
+
+.hamburger-icon div
+{
+	background-color: white;
+	width: 30px;
+    height: 4px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-left: 5px;
+    border-radius: 20%;
+    
+}
+
+.active-hamburger-button
+{
+	left: 150px !important;
+}
+
+.active-menu
+{
+	left: 0px !important;
+}
+
+
+@media (max-width: 768px) {
+	.sidebar
+	{
+		left: -150px;
+	}
+
+	#main-content
+	{
+		margin-left: 0px;
+	}
+
+	#title
+	{
+		height: 40%;
+	}
+	#profile-photo
+	{
+		height: 25%;
+		margin-left: 40%;
+	}
+	.hamburger-icon
+	{
+		left: 0px;
+	}
+}
