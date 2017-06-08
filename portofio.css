@@ -3,6 +3,20 @@ html,body,.sidebar,.pure-g
 	height: 100%;
 }
 
+body
+{
+	width: 100%;
+}
+
+html,body
+{
+
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+   // overflow-x: hidden; 
+}
+
 .sidebar
 {
 	width: 150px;
@@ -11,6 +25,7 @@ html,body,.sidebar,.pure-g
 	border: 0px;
 	position: fixed;
 	transition: left 0.5s;
+	z-index: 9999;
     
 }
 
@@ -27,30 +42,32 @@ html,body,.sidebar,.pure-g
 	background-color: #333;
 }
 
-#main-content
+.main-content
 {
 	background-color: #FEF;
 	background-image: url("Images/background.svg");
 	margin-left: 150px;
 	height: 100%;
+	width: 100%;
 	
 }
 
-#title
+.title
 {
 	background-image: url("Images/heading-background.jpeg");
 	color: #666;
-	height: 25%;
+	height: 30%;
+	width: 100%;
 }
 
-#title h1
+.title h1
 {
 	margin: 0px;
 	padding-top: 50px;
 	padding-left: 20px;
 }
 
-#title h3
+.title h3
 {
 	margin: 0px;
 	margin-top: 0px;
@@ -60,6 +77,7 @@ html,body,.sidebar,.pure-g
 #pageContent
 {
 	height: 100%;
+	width: 100%;
 }
 
 #profile-photo
@@ -68,6 +86,11 @@ html,body,.sidebar,.pure-g
 	height: 75%;
 	width: auto;
 	border-radius: 100%;
+}
+.titleContainer
+{
+	letter-spacing: 0em;
+	width: 70%;
 }
 
 .information-box
@@ -86,8 +109,7 @@ html,body,.sidebar,.pure-g
 	width: 40px;
 	height: 40px;
 	left: -150px;
-
-
+	z-index: 9999;
 }
 
 .hamburger-icon div
@@ -102,16 +124,25 @@ html,body,.sidebar,.pure-g
     
 }
 
-.active-hamburger-button
+#home
 {
-	left: 150px !important;
+	//display: none;
 }
+
+#education
+{
+	position: fixed;
+	top: 0px;
+	left: 100%;
+	width: 100%;
+	transition: left 0.5s;
+}
+
 
 .active-menu
 {
 	left: 0px !important;
 }
-
 
 @media (max-width: 768px) {
 	.sidebar
@@ -119,22 +150,85 @@ html,body,.sidebar,.pure-g
 		left: -150px;
 	}
 
-	#main-content
+	.main-content
 	{
 		margin-left: 0px;
+		max-width: 100%;
 	}
 
-	#title
+	.title
 	{
-		height: 40%;
+		height: 50%;
+		text-align: center;
 	}
+
+	
 	#profile-photo
 	{
-		height: 25%;
-		margin-left: 40%;
+		//margin-top: 0%;
+		height: 100%;
+		width: auto;
+		border-radius: 100%;
+		margin: auto;
+		vertical-align: middle;
+		
+	}
+	#photoContainer
+	{
+		height: 60%;
+		margin: auto;
+
+	}
+	.titleContainer
+	{
+		height: 40%;
+		width: 100%;
+		letter-spacing: 0em !important;
 	}
 	.hamburger-icon
 	{
 		left: 0px;
+	}
+
+	.active-hamburger-button
+	{
+		left: 150px !important;
+	}
+}
+
+@media (max-width: 400px) {
+	.title h3
+	{
+		margin: 0px;
+		margin-top: 0px;
+		padding-left: 0px;
+	}
+
+	.title h1
+	{
+		margin: 0px;
+		padding-top: 25px;
+		padding-left: 0px;
+	}
+	#photoContainer
+	{
+		margin:auto;
+		height: 40%;
+
+
+	}
+	.titleContainer
+	{
+		height: 50%;
+		margin: 2px;
+	}
+}
+
+@media (max-width: 330px) {
+	#photoContainer
+	{
+		margin:auto;
+		height: 40%;
+		margin-top: 5%;
 	}
 }
