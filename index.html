@@ -11,18 +11,18 @@
   		<meta name="viewport" content="width=device-width, initial-scale=1">
   		<script type="text/javascript" src="portfolio.js"></script>
   	</head>
- 	<body>
+ 	<body onresize="setMainContentWidth()">
  		<div id="pageContent">
 	 		
  			<div class="sidebar pure-menu">
 			    <span class="sidebar-heading pure-menu-heading">SECTIONS</span>
 
 			    <ul class="pure-menu-list">
-			        <li class="pure-menu-item"><a href="" class="pure-menu-link">Home</a></li>
+			        <li class="pure-menu-item"><a href="#" class="pure-menu-link" onclick=transition('home')>Home</a></li>
 			        <li class="pure-menu-item"><a href="#" class="pure-menu-link" onclick=transition('education')>Education</a></li>
-			        <li class="pure-menu-item"><a href="" class="pure-menu-link">Experience</a></li>
-			        <li class="pure-menu-item"><a href="" class="pure-menu-link">Projects</a></li>
-			        <li class="pure-menu-item"><a href="" class="pure-menu-link">Contact</a></li>
+			        <li class="pure-menu-item"><a href="#" class="pure-menu-link" onclick=transition('experience')>Experience</a></li>
+			        <li class="pure-menu-item"><a href="#" class="pure-menu-link" onclick=transition('projects')>Projects</a></li>
+			        <li class="pure-menu-item"><a href="#" class="pure-menu-link" onclick=transition('contact')>Contact</a></li>
 			    </ul>
 			</div>
 
@@ -51,16 +51,133 @@
 						<li>I am currently pursuing my Masters at the University of Southern California(USC).</li>
 						<li>I have been passionate about technology since I was a child and want to contribute to the world in the field of computer science</li>
 						<ul>
+						
 					</div>
 				</div>
 			</div>
 
 			<div class="main-content" id="education">
 				<div class="title">
+					<div class="pure-g" >
+						<div class="titleContainer" >
+							<h1 style="padding-top: auto; padding-bottom: auto"> Education</h1>
+						</div>
+						<div id="photoContainer">
+							<img id="profile-photo" src="Images/profile-photo.jpeg" />
+						</div>
+					</div>
+				</div>
+				<div class="information-box">
+					<div class="information-text">
+						<ul>
+							<li>
+								<strong>University of Southern California(USC), California</strong>
+								<ul>
+									<li>Masters in Computer Science, August 2016 onwards(On Going)</li>
+									<li>Selected Coursework: Foundations of Artificial Intelligence(CSCI 561), 3D Graphics and Rendering(CSCI 580), Algorithms(CSCI 570), Web Technologies(CSCI 571), Professional Writing and Communication for Computer Scientists(CSCI 598)</li>
+									<li>GPA: 3.75/4.0</li>
+								</ul>
+							</li>
+							<br>
+							<li>
+								<strong>Manipal Institute of Technology, Karnataka, India</strong>
+								<ul>
+									<li>Bachelors in Technology in Computer Science and Engineering(July 2012 - May 2016)</li>
+									<li>CGPA: 8.84/10.0</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="main-content" id="experience">
+				<div class="title">
 					<div class="pure-g">
-						<div class="pure-u-1-1">
-							<h1> Ratan George Senapathy test</h1>
-							<h3> Masters Student in Computer Science at University of Southern California(USC)</h3>
+						<div class="titleContainer">
+							<h1> Experience</h1>
+						</div>
+						<div id="photoContainer">
+							<img id="profile-photo" src="Images/profile-photo.jpeg" />
+						</div>
+					</div>
+				</div>
+				<div class="information-box">
+					<div class="information-text">
+						<ul>
+							<li>
+								<strong>Frenzy Dev </strong>
+								<i>(January 2017 - August 2017, Ongoing)</i>
+								<ul>
+									<li>Worked on increasing the accuracy of a fashion detection api that takes input images or fashion blogs and tell you where you can buy it</li>
+									<li>Was able to increase the accuracy of fetching the correct products from various stores to 70% from 50%</li>
+									<li>Integrated third party image recognition APIs like cloudsight and deepomatic for out image recognition purposes and currently working on migrating to IBM Watson</li>
+									<li>The company is a startup and because of a colleagues and my work, we were able to get our initial funding from Quake Capital and as a reward I got 5% shares in the company</li>
+									<li>I am also listed as an inventor in the patent application for the api</li>
+								</ul>
+							</li>
+							<br>
+							<li>
+								<strong>SanDisk India Device Design Centre Ltd, Bengaluru, India</strong>
+								<i>(January 2016 - May 2016)</i>
+								<ul>
+									<li>Designed a python based tracking tool to track invalid executions paths in firmware for more efficient firmware testing</li>
+									<li>This helped in reducing the debugging time by 6 to 8 hours every week</li>
+									
+								</ul>
+							</li>
+							<br>
+							<li>
+								<strong>Microsoft IT, Hyderabad, India</strong>
+								<i>(June 2015 - July 2015g)</i>
+								<ul>
+									<li>Designed and developed a user friendly data tracking tool which detects whether certain jobs failed while running scheduled jobs or programs on SQL Server and gave a visual representation of the job and database status</li>
+									<li>This reduced the number of work hours for searching for various error and bugs by around 50 to 40%</li>
+								</ul>
+							</li>
+							<br>
+							<li>
+								<strong>Parkyeri, Istanbul, Turkey</strong>
+								<i>(June 2014 - July 2014)</i>
+								<ul>
+									<li>Could take up the task of linking the various java libraries together, document the various relationships and interactions between the libraries and worked on java servlets</li>
+									
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="main-content" id="projects">
+				<div class="title">
+					<div class="pure-g">
+						<div class="titleContainer">
+							<h1> Projects</h1>
+						</div>
+						<div id="photoContainer">
+							<img id="profile-photo" src="Images/profile-photo.jpeg" />
+						</div>
+					</div>				</div>
+				<div class="information-box">
+					<div class="information-text">
+						<ul>
+						<li>Hi, I'm Ratan. I am a Masters student in Computer Science who is passionate about computer graphics, game development and web development.</li>
+						<li>I am currently pursuing my Masters at the University of Southern California(USC).</li>
+						<li>I have been passionate about technology since I was a child and want to contribute to the world in the field of computer science</li>
+						<ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="main-content" id="contact">
+				<div class="title">
+					<div class="pure-g">
+						<div class="titleContainer">
+							<h1>Contact</h1>
+						</div>
+						<div id="photoContainer">
+							<img id="profile-photo" src="Images/profile-photo.jpeg" />
 						</div>
 					</div>
 				</div>

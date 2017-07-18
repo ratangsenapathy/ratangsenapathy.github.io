@@ -14,8 +14,11 @@ html,body
     height: 100%;
     margin: 0px;
     padding: 0px;
-   // overflow-x: hidden; 
 }
+
+/*#home,#education{
+	width: 100%;
+}*/
 
 .sidebar
 {
@@ -44,8 +47,8 @@ html,body
 
 .main-content
 {
-	background-color: #FEF;
-	background-image: url("Images/background.svg");
+	background-color: #e5e5ff;
+	overflow: scroll;
 	margin-left: 150px;
 	height: 100%;
 	width: 100%;
@@ -80,6 +83,11 @@ html,body
 	width: 100%;
 }
 
+#photoContainer
+{
+	width: 30%;
+}
+
 #profile-photo
 {
 	margin-top: 10%;
@@ -98,8 +106,14 @@ html,body
 	border: 1px solid #999;
 	margin: 3% 1% 0% 1%;
 	border-radius: 10px;
-	padding: 2% 1% 2% 1%
+	padding: 2% 1% 2% 1%;
+	//background-color: #e5e5ff;
+
 }
+
+/*#education .information-text{
+	font-weight: bold;
+}*/
 
 .hamburger-icon
 {
@@ -124,12 +138,8 @@ html,body
     
 }
 
-#home
-{
-	//display: none;
-}
 
-#education
+#education,#experience,#projects,#contact
 {
 	position: fixed;
 	top: 0px;
@@ -165,7 +175,6 @@ html,body
 	
 	#profile-photo
 	{
-		//margin-top: 0%;
 		height: 100%;
 		width: auto;
 		border-radius: 100%;
