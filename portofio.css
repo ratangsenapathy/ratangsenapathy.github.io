@@ -20,6 +20,27 @@ html,body
 	width: 100%;
 }*/
 
+.projectslist{
+	text-align: center;
+	padding: 10px;
+}
+.googleplay, .itchio{
+	width: 25%;
+	text-align: center;
+	padding: 10px;
+	background-color: black;
+	color: white;
+	border-radius: 10px;
+	display: inline-block;
+	margin: 5px;
+}
+
+.gotopage{
+	height: 30px;
+	background-color: #FF0000;
+	color: white;
+}
+
 .sidebar
 {
 	width: 150px;
@@ -158,6 +179,11 @@ html,body
 	.sidebar
 	{
 		left: -150px;
+	}
+
+	.itchio{
+		width: 90%;
+	
 	}
 
 	.main-content
