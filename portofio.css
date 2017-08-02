@@ -107,12 +107,13 @@ html,body
 #photoContainer
 {
 	width: 30%;
+	height: 75%;
 }
 
 #profile-photo
 {
 	margin-top: 10%;
-	height: 75%;
+	height: 100%;
 	width: auto;
 	border-radius: 100%;
 }
